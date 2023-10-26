@@ -7,18 +7,11 @@ import org.testng.annotations.*;
 public class RegistrationTests extends BaseTest {
 
     @BeforeTest
-    public void preconditionsLogin() {
+    public void preconditionsRegistration() {
         logoutIfLogin();
     }
 
-//    @AfterMethod
-//    public void postconditionsLogin() {
-//        if(app.getUserHelper().isElementDisplayed(app.getUserHelper().isPopUpSuccessLoginDisplayed())){
-//            app.getUserHelper().clickOkPopUpSuccessLogin();
-//        }
-//    }
-
-    @Test(groups = {"smoke"})
+    @Test
     public void positiveRegistration() {
         String email = randomUtils.generateEmail(7);
 
@@ -46,7 +39,7 @@ public class RegistrationTests extends BaseTest {
         Assert.assertTrue(app.getUserHelper().validateMessageIncorrectEmailReg());
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void negativeRegistrationWrongPassword() {
         String email = randomUtils.generateEmail(7);
 

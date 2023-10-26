@@ -1,6 +1,5 @@
 package manager;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
@@ -35,7 +34,6 @@ public class ApplicationManager {
         logger.info("open page" + ConfigProperties.getProperty("url"));
         driver.register(new WDListener());
 
-        driver.navigate().to("https://ilcarro.web.app/search");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
