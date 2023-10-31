@@ -16,12 +16,12 @@ public class BaseTest {
             .password("123456Aa$")
             .build();
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void setup() {
         app.init();
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void stop() {
         app.tearDown();
     }

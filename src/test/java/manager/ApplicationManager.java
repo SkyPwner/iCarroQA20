@@ -1,5 +1,6 @@
 package manager;
 
+import lombok.Getter;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
@@ -15,6 +16,7 @@ public class ApplicationManager {
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
     static String browser;
     private EventFiringWebDriver driver;
+    @Getter
     UserHelper userHelper;
 
     public ApplicationManager(){
@@ -30,19 +32,17 @@ public class ApplicationManager {
             logger.info("created fireFox browser");
 
         }
+
         driver.navigate().to(ConfigProperties.getProperty("url"));
         logger.info("open page" + ConfigProperties.getProperty("url"));
-        driver.register(new WDListener());
-
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.register(new WDListener());
+
 
         userHelper = new UserHelper(driver);
     }
     public boolean signedIn = false;
-    public UserHelper getUserHelper() {
-        return userHelper;
-    }
 
     public void tearDown() {
         driver.quit();
