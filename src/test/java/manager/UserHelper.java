@@ -1,12 +1,8 @@
 package manager;
 
-import dto.UserDTO;
-import dto.UserDTOWith;
 import dto.UserDtoLombok;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -27,8 +23,10 @@ public class UserHelper extends BaseHelper {
     By inputLastNameReg = By.xpath("//input[@id='lastName']");
     By inputEmailReg = By.xpath("//input[@id='email']");
     By inputPasswordReg = By.xpath("//input[@id='password']");
-    String btnRegNewUser = "document.querySelector('#terms-of-use').click();";
-    String btnOkPopUpStr = "document.querySelector(`[type='button']`).click();";
+//    String btnRegNewUser = "document.querySelector('#terms-of-use');";
+    By btnRegNewUser = By.id("terms-of-use");
+//    String btnOkPopUpStr = "document.querySelector(`[type='button']`).click();";
+    By btnOkPopUpStr = By.xpath("//button[@class='positive-button ng-star-inserted']");
     By checkBoxReg = By.xpath("//label[@for='terms-of-use']");
     By btnUallaReg = By.xpath("//button[@type='submit']");
     By textPopUpSuccessRegH1 = By.xpath("//div[@class='dialog-container']//h1[@class='title']");
@@ -56,9 +54,9 @@ public class UserHelper extends BaseHelper {
         typeTextBase(inputLastNameReg, user.getLastName());
         typeTextBase(inputEmailReg, user.getEmail());
         typeTextBase(inputPasswordReg, user.getPassword());
-        jsClickBase(btnRegNewUser);
+        clickBase(btnRegNewUser);
         clickBase(btnUallaReg);
-        jsClickBase(btnRegNewUser);
+        clickBase(btnRegNewUser);
     }
 
     public boolean validatePopUpMessageSuccessAfterLogin() {
@@ -100,13 +98,11 @@ public class UserHelper extends BaseHelper {
     }
 
     public void clickOkPopUpSuccessLogin() {
-        jsClickBase(btnOkPopUpStr);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1000).toMillis());
+        wait.until(ExpectedConditions.visibilityOfElementLocated((btnOkPopUpStr)));
+        clickBase(btnOkPopUpStr);
     }
 
-    public void waitForElementToAppear(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(500).toMillis());
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
 
     public void clickRegistrationLink() {
         clickBase(btnOpenRegForm);

@@ -46,4 +46,19 @@ public class DataProviderLogin {
             return null;
         }
     }
+    @DataProvider
+    public Iterator<Object[]> regYAML() {
+        try {
+            InputStream is = getClass().getClassLoader().getResourceAsStream("datareg.yaml");
+            ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+            UserDtoLombok[] userData = mapper.readValue(is, UserDtoLombok[].class);
+
+            return Arrays.stream(userData)
+                    .map(user -> new Object[]{user})
+                    .iterator();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

@@ -18,6 +18,9 @@ public class ApplicationManager {
     private EventFiringWebDriver driver;
     @Getter
     UserHelper userHelper;
+    @Getter
+
+    CarHelper carHelper;
 
     public ApplicationManager(){
         browser = System.getProperty("browser", BrowserType.CHROME);
@@ -41,6 +44,7 @@ public class ApplicationManager {
 
 
         userHelper = new UserHelper(driver);
+        carHelper = new CarHelper(driver);
     }
     public boolean signedIn = false;
 

@@ -2,9 +2,12 @@ package manager;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.Duration;
 import java.util.List;
 
 public class BaseHelper {
@@ -25,7 +28,7 @@ public class BaseHelper {
 
     public void clickBase(By locator) {
         WebElement el = findElementBase(locator);
-        el.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", el);
     }
 
     public String getTextBase(By locator) {
@@ -52,17 +55,8 @@ public class BaseHelper {
             return false;
         }
     }
-
-    public void jsClickBase(String locator) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript(locator);
-    }
-
-    public void clickByXY(By locator, double down, int right) {
-        Rectangle rect = findElementBase(locator).getRect();
-        int x = rect.getX() + (rect.getWidth() / right);
-        int y = (int) (rect.getY() + (rect.getHeight() / down));
-        Actions actions = new Actions(driver);
-        actions.moveByOffset(x, y).click().perform();
+    public void waitForElementToAppear(By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(500).toMillis());
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 }

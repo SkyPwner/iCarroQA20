@@ -12,8 +12,8 @@ public class BaseTest {
     RandomUtils randomUtils = new RandomUtils();
 
     UserDtoLombok userDtoLombok = UserDtoLombok.builder()
-            .email("testqa20@gmail.com")
-            .password("123456Aa$")
+            .email("qwertyasdf1.test@gmail.com")
+            .password("123456Aa$!")
             .build();
 
     @BeforeClass(alwaysRun = true)

@@ -28,6 +28,10 @@ dependencies {
 
 test {
     useTestNG {
+        options {
+            parallel = "classes"
+            threadCount = 5
+        }
     }
 }
 
