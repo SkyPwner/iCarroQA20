@@ -10,7 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 
 public class AddCarDto {
-    String location;
+    String city;
     String manufacture;
     String model;
     Integer year;
@@ -18,7 +18,7 @@ public class AddCarDto {
     Integer seats;
     String carClass;
     String serialNumber;
-    Double price;
+    Double pricePerDay;
     String about;
     String photo;
 }

@@ -19,7 +19,6 @@ public class ApplicationManager {
     @Getter
     UserHelper userHelper;
     @Getter
-
     CarHelper carHelper;
 
     public ApplicationManager(){
@@ -45,9 +44,9 @@ public class ApplicationManager {
 
         userHelper = new UserHelper(driver);
         carHelper = new CarHelper(driver);
+
     }
     public boolean signedIn = false;
-
     public void tearDown() {
         driver.quit();
     }

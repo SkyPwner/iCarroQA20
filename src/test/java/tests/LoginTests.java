@@ -1,7 +1,6 @@
 package tests;
 
 import data.DataProviderLogin;
-import dto.UserDTO;
 import dto.UserDtoLombok;
 import org.testng.Assert;
 import org.testng.annotations.*;

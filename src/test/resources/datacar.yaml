@@ -1,11 +1,11 @@
-- location: "Haifa"
+- city: "Haifa"
   manufacture: "Test Manufacturer"
   model: "Test Model"
   year: 2023
   fuel: "Diesel"
   seats: 5
   carClass: "SUV"
-  serialNumber: "SQ4Q234563"
-  price: 1000.00
+  serialNumber: "SQ1414Q234563"
+  pricePerDay: 1000.00
   about: "This is a test description of the car."
   photo: "testFiles/testphoto.jpg"

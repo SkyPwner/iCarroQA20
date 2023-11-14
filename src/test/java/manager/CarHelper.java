@@ -31,7 +31,7 @@ public class CarHelper extends BaseHelper {
     }
     public void fillCarForm(AddCarDto car) {
         clickAddCarLink();
-        enterLocationWithAutocomplete(car.getLocation());
+        enterLocationWithAutocomplete(car.getCity());
         typeTextBase(manufactureInputLocator, car.getManufacture());
         typeTextBase(modelInputLocator, car.getModel());
         typeTextBase(yearInputLocator, String.valueOf(car.getYear()));
@@ -40,7 +40,7 @@ public class CarHelper extends BaseHelper {
         typeTextBase(seatsInputLocator, String.valueOf(car.getSeats()));
         typeTextBase(carClassInputLocator, car.getCarClass());
         typeTextBase(serialNumberInputLocator, car.getSerialNumber());
-        typeTextBase(priceInputLocator, String.valueOf(car.getPrice()));
+        typeTextBase(priceInputLocator, String.valueOf(car.getPricePerDay()));
         typeTextBase(aboutTextareaLocator, car.getAbout());
         uploadPhoto(car.getPhoto());
         clickBase(submitButtonLocator);
@@ -60,7 +60,7 @@ public class CarHelper extends BaseHelper {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10).toMillis());
         WebElement autoCompleteResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class, 'pac-container pac-logo hdpi') and not(contains(@style, 'display: none'))]")));
         Actions builder = new Actions(driver);
-        builder.moveToElement(autoCompleteResult).perform();
+//        builder.moveToElement(autoCompleteResult).perform();
         builder.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
     }
 

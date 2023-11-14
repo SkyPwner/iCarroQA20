@@ -4,9 +4,77 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7ccdfe9-75ea-401b-81d3-8626cef2bb5b" name="Changes" comment="Dataprovider Tests">
+    <list default="true" id="e7ccdfe9-75ea-401b-81d3-8626cef2bb5b" name="Changes" comment="Added car test, fixes">
+      <change afterPath="$PROJECT_DIR$/logs/log-20231107T161259.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231107T161318.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231107T161436.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231107T161547.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231107T161854.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231107T184422.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231107T184456.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231107T184513.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231114T163203.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231114T164056.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231114T164108.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231114T165554.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231114T165628.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-20231114T165826.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/DataProviderCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_13_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_14_39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_14_40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_15_50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-07_16_15_51.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_32_59.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_45.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_51.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_33_56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_34_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_34_08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_34_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/screenshots/screenshot-2023-11-14_16_34_19.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/HW13.2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log-20231031T231123.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log-20231031T231134.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dto/AddCarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dto/AddCarDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dto/UserDTOWith.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/manager/BaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/manager/BaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/manager/CarHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/manager/CarHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datacar.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/datacar.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datareg.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/datareg.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +94,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="iCarroQA20" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -55,27 +128,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/skypw/Downloads/Java/iCarroQA20-main/src/test/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.AddCarTests.positiveAddCar.executor": "Run",
+    "Gradle.LoginTests.executor": "Run",
+    "Gradle.LoginTests.positiveLogin.executor": "Run",
+    "Gradle.Tests in 'tests'.executor": "Run",
+    "Gradle.iCarroQA20-main [clean test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/skypw/Downloads/Java/iCarroQA20-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\skypw\Downloads\Java\iCarroQA20-main\src\test\resources" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LoginTests.positiveLogin">
-    <configuration name="LoginTests.negativePasswordWithoutSymbol" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.iCarroQA20-main [clean test]">
+    <configuration name="AddCarTests.positiveAddCar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -88,7 +174,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.negativePasswordWithoutSymbol&quot;" />
+            <option value="&quot;tests.AddCarTests.positiveAddCar&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.LoginTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -123,7 +233,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,7 +246,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.RegistrationTests&quot;" />
+            <option value="&quot;tests.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,7 +257,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.negativeRegistrationWrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="iCarroQA20-main [clean test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,52 +268,30 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.RegistrationTests.negativeRegistrationWrongPassword&quot;" />
+            <option value="clean" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RegistrationTests.positiveRegistration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.RegistrationTests.positiveRegistration&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.iCarroQA20-main [clean test]" />
+        <item itemvalue="Gradle.AddCarTests.positiveAddCar" />
+        <item itemvalue="Gradle.Tests in 'tests'" />
         <item itemvalue="Gradle.LoginTests.positiveLogin" />
-        <item itemvalue="Gradle.RegistrationTests.positiveRegistration" />
-        <item itemvalue="Gradle.LoginTests.negativePasswordWithoutSymbol" />
-        <item itemvalue="Gradle.RegistrationTests" />
-        <item itemvalue="Gradle.RegistrationTests.negativeRegistrationWrongPassword" />
+        <item itemvalue="Gradle.LoginTests" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastUrl" value="https://ilcarro.web.app/let-car-work" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -213,6 +301,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695144649862</updated>
+      <workItem from="1699283432521" duration="1666000" />
+      <workItem from="1699285337915" duration="1549000" />
+      <workItem from="1699306513480" duration="51000" />
+      <workItem from="1699312665355" duration="628000" />
+      <workItem from="1699360046933" duration="99000" />
+      <workItem from="1699362097086" duration="209000" />
+      <workItem from="1699373404461" duration="459000" />
+      <workItem from="1699373920621" duration="246000" />
+      <workItem from="1699374366608" duration="565000" />
+      <workItem from="1699377126401" duration="2739000" />
+      <workItem from="1699380733220" duration="1726000" />
+      <workItem from="1699382513562" duration="253000" />
+      <workItem from="1699397206195" duration="466000" />
+      <workItem from="1699399600497" duration="638000" />
+      <workItem from="1699453792479" duration="2000" />
+      <workItem from="1699455475921" duration="20000" />
+      <workItem from="1699455667258" duration="479000" />
+      <workItem from="1699456236745" duration="54000" />
+      <workItem from="1699977970012" duration="640000" />
+      <workItem from="1699979458586" duration="1837000" />
     </task>
     <task id="LOCAL-00001" summary="partly add loginPositiveTest">
       <option name="closed" value="true" />
@@ -302,8 +410,19 @@
       <option name="project" value="LOCAL" />
       <updated>1698794039674</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added car test, fixes">
+      <option name="closed" value="true" />
+      <created>1699023005740</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699023005740</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
@@ -319,6 +438,7 @@
     <MESSAGE value="negative password" />
     <MESSAGE value="Deleted navigate to" />
     <MESSAGE value="Dataprovider Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dataprovider Tests" />
+    <MESSAGE value="Added car test, fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added car test, fixes" />
   </component>
 </project>
